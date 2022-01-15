@@ -1,0 +1,207 @@
+peДля выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+   зайти на сайт github 
+   на личной странице во вкладке Repositories 
+   нажать new 
+   дать название JSON на открывшейся странице 
+   нажать create repository
+ 
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+    git clone https://github.com/GroverAbels/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+    touch new.json 
+
+ 7. Добавить файл под гит.
+    git add new.json
+
+ 8. Закоммитить файл.
+    git commit -m "about_me"
+ 9. Отправить файл на внешний GitHub репозиторий.
+    git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+     vim new.json 
+     {
+   "person":{
+    "name":"Серов Владимир Игоревич",
+    "age":"26",
+    "salary":"2000"
+     "pet":"1"
+        }
+      }
+    Esc :wq
+ 11. Отправить изменения на внешний репозиторий.
+     git push
+
+
+ 12. Создать файл preferences.json
+      touch preferences.json 
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+     vim preferences.json
+      {
+  "Film":"Whiplash",
+  "TVSeries":"How I Meet Your Mother",
+   "Food":"Pizza",
+   "Season":"Spring",
+   "Country":"Canada"
+      }
+      Esc :wq
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+     touch skills.json
+     vim skills.json
+    {
+  "Skills":"Hard, Soft, Charles, Postman, Python etc.."
+   }
+
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+     git add .
+     git commit -m "Aboutme"      
+     git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+     1. Зайти на страницу своего GitHub
+     2. Add file
+     3. Create new file 
+     4. Commit new file
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+     git fetch
+     git pull
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+     {
+ "bug_report":"IMAGINATION",
+ "summary":"Во время чтения при моргании в руках япоявляется смартфоне",
+ "severity":"Critical",
+ "Steps to reproduce":[
+ "1. Взять книгу",
+ "2. Начать читать",
+ "3. Моргнуть",
+   ],
+ "Result":"Вы держите смартфон и листаете мемы",
+ "Expected Result":"Чтение продолжается"
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+   нажать commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+    git add . 
+    git fetch 
+    git pull
+
+
+
+XML
+21. Создать внешний репозиторий c названием XML.
+     зайти на сайт github 
+   на личной странице во вкладке Repositories 
+   нажать new 
+   дать название XML на открывшейся странице 
+   нажать create repository
+
+22. Клонировать репозиторий XML на локальный компьютер.
+    git clone https://github.com/GroverAbels/XML.git     
+
+23. Внутри локального XML создать файл “new.xml”.
+   touch new.xml
+
+24. Добавить файл под гит.
+     git add new.xml
+
+25. Закоммитить файл.
+     git commit -m "about_me"
+
+26. Отправить файл на внешний GitHub репозиторий.
+     git push
+27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+    <?xml version="1.0" encoding="utf-8"?>
+     <person>
+      <name>Серов Владимир Игоревич</name>
+      <age>26</age>
+      <pet>1</pet>
+      <salary>2000$</salary>
+     </person> 
+
+    Esc :wq     
+
+
+
+28. Отправить изменения на внешний репозиторий.
+    git push 
+
+29. Создать файл preferences.xml
+    touch preferences.xml
+
+30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+    vim preferences.xml
+    <?xml version="1.0" encoding="utf-8"?>
+  <Film>Whiplash</Film>
+  <TVSeries>How I Meet Your Mother</TVSeries>
+  <Food>Pizza</Food>
+  <Season>Spring</Season>
+  <Country>Canada</Country>
+
+31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+    touch skills.xml
+    vim skills.xml 
+    <?xml version="1.0" encoding="utf-8"?> 
+    <Skills>Hard, Soft, Charles, Postman, Python etc...</Skills>
+
+32. Сделать коммит в одну строку.
+   git add . 
+   git commit -m "About Me"
+
+33. Отправить сразу 2 файла на внешний репозиторий.
+    git push        
+
+34. На веб интерфейсе создать файл bug_report.xml.
+   1. Зайти на страницу своего GitHub
+     2. Add file
+     3. Create new file 
+     4. Commit new file
+    
+
+35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+    git fetch
+    git pull
+
+36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+     
+<?xml version="1.0" encoding="utf-8"?> 
+ <bug_report>IMAGINATION</bug_report>
+ <Summary>Во время чтения при моргании в руках япоявляется смартфоне</Summary>
+ <severity>"Critical"<severity>
+  <Steps to reproduce>
+    <1>Взять книгу</1>
+    <2>Начать читать</2>
+    <2>Моргнуть</3>
+   </Steps to reproduse>
+ <Result>Вы держите смартфон и листаете мемы</Result>
+ <Expected Result>Чтение продолжается</Expected Result>
+
+37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+нажать commit changes
+
+38. Синхронизировать внешний и локальный репозиторий XML
+    git add . 
+    git fetch 
+    git pull
+
+
+
